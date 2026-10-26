@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "id": "usr_001",
+      "name": "Sarah Jenkins",
+      "email": "sarah.jenkins@example.com",
+      "password": "Password123!",
+      "createdAt": "2026-01-15T08:30:00.000Z"
+    },
+    {
+      "id": "usr_002",
+      "name": "David Chen",
+      "email": "david.chen@example.com",
+      "password": "Password123!",
+      "createdAt": "2026-02-10T14:20:00.000Z"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "acc_001",
+      "userId": "usr_001",
+      "accountNumber": "1004829104",
+      "accountType": "Checking",
+      "balance": 8400.75,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-01-15T08:35:00.000Z"
+    },
+    {
+      "id": "acc_002",
+      "userId": "usr_001",
+      "accountNumber": "1004829105",
+      "accountType": "Savings",
+      "balance": 24850,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-01-15T08:36:00.000Z"
+    },
+    {
+      "id": "acc_003",
+      "userId": "usr_001",
+      "accountNumber": "1004829106",
+      "accountType": "Investment",
+      "balance": 55200.5,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-02-01T11:15:00.000Z"
+    },
+    {
+      "id": "acc_004",
+      "userId": "usr_002",
+      "accountNumber": "2009384711",
+      "accountType": "Checking",
+      "balance": 4120,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-02-10T14:25:00.000Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_117617_c",
+      "userId": "usr_001",
+      "accountId": "acc_002",
+      "type": "credit",
+      "description": "Transfer from Checking (•••• 9104): Test Transfer",
+      "amount": 50,
+      "date": "2026-10-26T16:11:57.617Z",
+      "status": "Completed",
+      "referenceId": "TRF-117617-451",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "1004829105"
+    },
+    {
+      "id": "tx_117617_d",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "debit",
+      "description": "Transfer to Savings (•••• 9105): Test Transfer",
+      "amount": 50,
+      "date": "2026-10-26T16:11:57.617Z",
+      "status": "Completed",
+      "referenceId": "TRF-117617-451",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "1004829105"
+    },
+    {
+      "id": "tx_001",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "credit",
+      "description": "Apex Corp - Monthly Salary Deposit",
+      "amount": 4250,
+      "date": "2026-10-24T09:00:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-8849201",
+      "sourceAccount": "Payroll Direct Deposit",
+      "destinationAccount": "1004829104"
+    },
+    {
+      "id": "tx_002",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "debit",
+      "description": "Downtown Electric Utility Bill",
+      "amount": 142.8,
+      "date": "2026-10-22T14:15:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-3928174",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "Utility Service Provider"
+    },
+    {
+      "id": "tx_003",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "debit",
+      "description": "Internal Transfer to High-Yield Savings",
+      "amount": 1000,
+      "date": "2026-10-20T10:30:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-7192843",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "1004829105"
+    },
+    {
+      "id": "tx_004",
+      "userId": "usr_001",
+      "accountId": "acc_002",
+      "type": "credit",
+      "description": "Internal Transfer from Primary Checking",
+      "amount": 1000,
+      "date": "2026-10-20T10:30:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-7192843",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "1004829105"
+    },
+    {
+      "id": "tx_005",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "credit",
+      "description": "Client Strategy Consulting Retainer",
+      "amount": 1850,
+      "date": "2026-10-18T16:45:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-6291048",
+      "sourceAccount": "Apex Client Wire",
+      "destinationAccount": "1004829104"
+    },
+    {
+      "id": "tx_006",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "debit",
+      "description": "Whole Foods Market Grocery",
+      "amount": 88.42,
+      "date": "2026-10-16T18:20:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-5102947",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "Point of Sale Merchant"
+    },
+    {
+      "id": "tx_007",
+      "userId": "usr_001",
+      "accountId": "acc_001",
+      "type": "debit",
+      "description": "Home Mortgage Monthly Amortization",
+      "amount": 2100,
+      "date": "2026-10-15T08:00:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-4091823",
+      "sourceAccount": "1004829104",
+      "destinationAccount": "Summit Mortgage Group"
+    },
+    {
+      "id": "tx_008",
+      "userId": "usr_001",
+      "accountId": "acc_002",
+      "type": "credit",
+      "description": "High-Yield Monthly APY Interest Credit",
+      "amount": 82.15,
+      "date": "2026-10-01T00:05:00.000Z",
+      "status": "Completed",
+      "referenceId": "REF-3091824",
+      "sourceAccount": "Apex Bank Interest Disbursal",
+      "destinationAccount": "1004829105"
+    }
+  ]
+}
